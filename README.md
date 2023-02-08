@@ -14,7 +14,7 @@
 - Confirm working of docker compose by running `docker compose version`
 
 ## Run Database
-- open the folder where the repo is cloned.
+- Open the folder where the repo is cloned.
 - Run the database with `docker compose up --build -d`
 - Add the plsql scripts you would like to run in the `/scripts/` folder. refer `print.sql` file in the folder for reference.
 - Start the plsql shell with `docker exec  -u root -i oracle bash -c "cd scripts && sqlplus system/admin"`
@@ -23,7 +23,7 @@
 - Once you are done, run `docker compose down` to stop the database. (run this in the same folder where you ran docker compose up)
 
 
--  (optional) Additioanlly, For linux users, to execute a single .sql script :
+-  (optional) Additionally, For linux users, to execute a single .sql script :
     - execute the script with `./run.sh <fileName>`
     - example: `./run.sh print.sql`
 
