@@ -1,0 +1,1 @@
+docker exec -it oracle bash -c "printf \"SET SERVEROUTPUT ON \n @scripts/$args[0] \n exit\" | sqlplus system/admin"
