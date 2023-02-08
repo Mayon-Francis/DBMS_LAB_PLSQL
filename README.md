@@ -26,6 +26,7 @@
 -  (optional) Additionally, For linux users, to execute a single .sql script :
     - execute the script with `./run.sh <fileName>`
     - example: `./run.sh print.sql`
+    - you can run this without starting the `docker exec....` command and starting the plsql shell
 
 
 ## To delete the db data, and clear space
