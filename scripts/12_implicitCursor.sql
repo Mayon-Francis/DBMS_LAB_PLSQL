@@ -1,0 +1,13 @@
+DECLARE
+
+BEGIN
+    UPDATE SAMPLE
+    SET ID=ID+10;
+
+    IF SQL%NOTFOUND THEN
+        DBMS_OUTPUT.PUT_LINE('NO IDS Updated');
+    ELSIF SQL%FOUND THEN
+        DBMS_OUTPUT.PUT_LINE(SQL%ROWCOUNT || ' IDs were updated');
+    END IF;
+END;
+/
